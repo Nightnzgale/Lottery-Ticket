@@ -1,3 +1,64 @@
 body{
-    background-image: url(/resources/pink_background.gif);
+    background-image: url(./resources/pink_background.gif);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+h1{
+    color: rgb(241, 134, 146);
+}
+
+.big_invis{
+    border: 4px solid white;
+    width: 180vh;
+    height: 90vh;
+    display: flex;
+    flex-direction:row;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    gap: 20vh;
+}
+
+.left_box{
+    border: 4px solid white;
+    width: 70vh;
+    height: 80vh;
+    display: flex;
+    flex-direction: column;
+    gap: 8vh;
+}
+
+.right_box{
+    background-color: rgb(241, 134, 146);
+    border: 4px solid white;
+    width: 70vh;
+    height: 80vh;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+}
+
+.blue_right_box{
+    background-color: rgb(66, 194, 229);
+    border: 2px solid white;
+    width: 65vh;
+    height: 75vh;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+}
+
+.white_right_box{
+    background-color: white;
+    border: 2px solid white;
+    width: 60vh;
+    height: 70vh;
+}
+
+.right_column{
+    display: flex;
+    flex-direction: column;
 }
