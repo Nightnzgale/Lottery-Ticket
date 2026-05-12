@@ -158,10 +158,10 @@ h1{
     height: 10vh;
     width: 10vh;
     border: 0.2vh solid rgb(241, 134, 146);
-    transition: width height 1s;
+    transition: width height 2s;
 }
 
 .box:hover{
-    width: 20vh;
-    height: 20vh;
+    width: 12vh;
+    height: 12vh;
 }
