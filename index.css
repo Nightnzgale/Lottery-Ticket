@@ -16,7 +16,7 @@ h1{
     font-family: "pixelify-sans";
     font-size: 5vh;
     color: rgb(241, 134, 146);
-    text-shadow: 0.5vh 0.5vh #ffffff;
+    text-shadow: 0.5vh 0.5vh white;
 }
 
 .big_invis{
@@ -43,11 +43,18 @@ h1{
     display: flex;
     flex-direction: row;
     gap: 2vh;
-    transition: width 1s;
+    transition: .2s;
+    box-shadow: 0 0.6vh 0 rgb(255 158 192), 0 4vh 10vh rgba(255,150,190,.3);
+    background-image: linear-gradient(white 50%, rgb(255 216 232) 120%);
 }
 
 .rules_button:hover{
-  width: 30vh;
+  transform: translateY(-0.5vh) scale(1.03);
+}
+
+.rules_button:active{
+    transform: translateY(0.01vh);
+    box-shadow: 0 0.1vh 0 rgb(255 158 192);
 }
 
 .happy_sylveon{
@@ -57,7 +64,6 @@ h1{
 }
 
 .eevee_button{
-    background-color: white;
     border-radius: 50vh;
     height: 6vh;
     width: 25vh;
@@ -68,11 +74,18 @@ h1{
     display: flex;
     flex-direction: row;
     gap: 2vh;
-    transition: width 1s;
+    transition: .2s;
+    box-shadow: 0 0.6vh 0 rgb(255 158 192), 0 4vh 10vh rgba(255,150,190,.3);    
+    background-image: linear-gradient(white 50%, rgb(255 216 232) 120%);
 }
 
 .eevee_button:hover{
-  width: 30vh;
+  transform: translateY(-0.5vh) scale(1.03);
+}
+
+.eevee_button:active{
+    transform: translateY(0.01vh);
+    box-shadow: 0 0.1vh 0 rgb(255 158 192);
 }
 
 .sitting_sylveon{
@@ -116,7 +129,7 @@ h1{
 }
 
 .white_right_box{
-    background-color: white;
+    background-image: linear-gradient(rgb(255 216 232), white 50%, rgb(255 216 232) 120%);
     border: 0.5vh solid white;
     width: 60vh;
     height: 70vh;
@@ -128,14 +141,15 @@ h1{
 
 .lottery_header{
     margin-top: 2vh;
+    background-color: white;
     border: 0.2vh solid rgb(241, 134, 146);
     width: 55vh;
     height: 20vh;
 }
 
 .tile_box{
+    background-color: rgb(248, 198, 215);
     margin-top: 2vh;
-    border: 0.2vh solid rgb(241, 134, 146);
     width: 55vh;
     height: 42vh;
     display: flex;
@@ -157,11 +171,12 @@ h1{
     margin: 1vh;
     height: 10vh;
     width: 10vh;
-    border: 0.2vh solid rgb(241, 134, 146);
+    background-color: white;
     transition: width height 2s;
 }
 
 .box:hover{
+    background-color: rgb(198, 243, 255);
     width: 12vh;
     height: 12vh;
 }
