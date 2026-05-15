@@ -7,55 +7,55 @@ let newTicketClicked = false;
 const eevees = [
   {
     name: "Eevee",
-    image: "./resources/eevee.png",
+    image: "/resources/eevees/eevee.gif",
     value: 10
   },
 
   {
     name: "Vaporeon",
-    image: "./resources/vaporeon.png",
+    image: "/resources/eevees/vaporeon.gif",
     value: 25
   },
 
   {
     name: "Jolteon",
-    image: "./resources/jolteon.png",
+    image: "/resources/eevees/jolteon.gif",
     value: 25
   },
 
   {
     name: "Flareon",
-    image: "./resources/flareon.png",
+    image: "/resources/eevees/flareon.gif",
     value: 30
   },
 
   {
     name: "Espeon",
-    image: "./resources/espeon.png",
+    image: "/resources/eevees/espeon.gif",
     value: 50
   },
 
   {
     name: "Umbreon",
-    image: "./resources/umbreon.png",
+    image: "/resources/eevees/umbreon.gif",
     value: 75
   },
 
   {
     name: "Leafeon",
-    image: "./resources/leafeon.png",
+    image: "/resources/eevees/leafeon.gif",
     value: 40
   },
 
   {
     name: "Glaceon",
-    image: "./resources/glaceon.png",
+    image: "/resources/eevees/glaceon.gif",
     value: 40
   },
 
   {
     name: "Sylveon",
-    image: "./resources/sylveon.png",
+    image: "/resources/eevees/sylveon.gif",
     value: 99999999
   }
 ];
