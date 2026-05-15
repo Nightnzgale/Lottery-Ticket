@@ -179,7 +179,7 @@ function calculateWinnings() {
     else {
 
         resultDiv.innerHTML +=
-            "<p>Haha L you lose</p>";
+            "<p>You lost!</p>";
     }
     resultDiv.innerHTML += '<button onclick="makeTrue()" class="new_ticket_button">TRY YOUR LUCK AGAIN</button>';
 }
