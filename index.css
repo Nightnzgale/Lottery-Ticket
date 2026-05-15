@@ -1,207 +1,451 @@
-
+/* Layla Wong - Lottery Ticket - Final Project */
 .pixelify-sans{
   font-family: "Pixelify Sans", sans-serif;
-  font-optical-sizing: auto;
-  font-weight: weight;
-  font-style: normal;
 }
 
 body{
-    background-image: url(./resources/pink_background.gif);
-    background-repeat: no-repeat;
-    background-size: cover;
+  background-image: url(./resources/pink_background.gif);
+
+  background-repeat: no-repeat;
+
+  background-size: cover;
+
+  overflow: hidden;
 }
 
 h1{
-    font-family: "pixelify-sans";
-    font-size: 5vh;
-    color: rgb(241, 134, 146);
-    text-shadow: 0.5vh 0.5vh white;
+  font-family: "Pixelify Sans";
+
+  font-size: 5vh;
+
+  color: rgb(241, 134, 146);
+
+  text-shadow: 0.5vh 0.5vh white;
 }
 
 .big_invis{
-    border: 0.2vh solid white;
-    width: 180vh;
-    height: 90vh;
-    display: flex;
-    flex-direction:row;
-    justify-content: center;
-    text-align: center;
-    align-items: center;
-    gap: 20vh;
+  width: 180vh;
+
+  height: 90vh;
+
+  display: flex;
+
+  flex-direction: row;
+
+  justify-content: center;
+
+  align-items: center;
+
+  gap: 20vh;
 }
 
-.rules_button{
-    background-color: white;
-    border-radius: 50vh;
-    height: 6vh;
-    width: 25vh;
-    border: 0.2vh solid rgb(241, 134, 146);
-    text-align: center;
-    align-items: center;
-    color: rgb(241, 134, 146);
-    display: flex;
-    flex-direction: row;
-    gap: 2vh;
-    transition: .2s;
-    box-shadow: 0 0.6vh 0 rgb(255 158 192), 0 4vh 10vh rgba(255,150,190,.3);
-    background-image: linear-gradient(white 50%, rgb(255 216 232) 120%);
+/* LEFT SIDE */
+
+.left_box{
+  width: 70vh;
+
+  height: 80vh;
+
+  display: flex;
+
+  flex-direction: column;
+
+  justify-content: center;
+
+  align-items: center;
+
+  gap: 3vh;
 }
 
-.rules_button:hover{
-  transform: translateY(-0.5vh) scale(1.03);
-}
-
-.rules_button:active{
-    transform: translateY(0.01vh);
-    box-shadow: 0 0.1vh 0 rgb(255 158 192);
-}
-
-.happy_sylveon{
-    width: 5vh;
-    height: 5vh;
-    padding-left: 2.5vh;
-}
-
+.rules_button,
 .eevee_button{
-    border-radius: 50vh;
-    height: 6vh;
-    width: 25vh;
-    border: 0.2vh solid rgb(241, 134, 146);
-    text-align: center;
-    align-items: center;
-    color: rgb(241, 134, 146);
-    display: flex;
-    flex-direction: row;
-    gap: 2vh;
-    transition: .2s;
-    box-shadow: 0 0.6vh 0 rgb(255 158 192), 0 4vh 10vh rgba(255,150,190,.3);    
-    background-image: linear-gradient(white 50%, rgb(255 216 232) 120%);
+  background-image:
+  linear-gradient(
+      white 50%,
+      rgb(255 216 232) 120%
+  );
+
+  border-radius: 50vh;
+
+  height: 6vh;
+
+  width: 25vh;
+
+  border: 0.2vh solid rgb(241, 134, 146);
+
+  display: flex;
+
+  flex-direction: row;
+
+  justify-content: center;
+
+  align-items: center;
+
+  gap: 2vh;
+
+  color: rgb(241, 134, 146);
+
+  font-family: "Pixelify Sans";
+
+  transition: .2s;
+
+  box-shadow:
+  0 0.6vh 0 rgb(255 158 192),
+  0 4vh 10vh rgba(255,150,190,.3);
 }
 
+.rules_button:hover,
 .eevee_button:hover{
   transform: translateY(-0.5vh) scale(1.03);
 }
 
-.eevee_button:active{
-    transform: translateY(0.01vh);
-    box-shadow: 0 0.1vh 0 rgb(255 158 192);
+.rules_info{
+  width: 35vh;
+
+  text-align: center;
+
+  font-family: "Pixelify Sans";
+
+  color: white;
+
+  font-size: 2vh;
+
+  line-height: 3vh;
+
+  background-color: rgba(255,255,255,0.3);
+
+  padding: 2vh;
+
+  border-radius: 2vh;
+}
+
+.happy_sylveon{
+  width: 5vh;
+
+  height: 5vh;
 }
 
 .sitting_sylveon{
-    height: 30vh;
-    width: 30vh;
+  width: 30vh;
+
+  height: 30vh;
 }
 
-.left_box{
-    border: 0.2vh solid white;
-    width: 70vh;
-    height: 80vh;
-    display: flex;
-    flex-direction: column;
-    gap: 5vh;
-    justify-content: center;
-    align-items: center;
-}
+/* RIGHT SIDE */
 
 .right_box{
-    background-image: radial-gradient( rgb(252, 186, 196), rgb(252, 186, 196), rgb(241, 134, 146));
-    border: 0.2vh solid white;
-    width: 70vh;
-    height: 80vh;
-    display: flex;
-    justify-content: center;
-    text-align: center;
-    align-items: center;
-    box-shadow: 0.5vh 0.5vh 3vh white;
+  background-image:
+  radial-gradient(
+      rgb(252, 186, 196),
+      rgb(252, 186, 196),
+      rgb(241, 134, 146)
+  );
+
+  width: 70vh;
+
+  height: 80vh;
+
+  display: flex;
+
+  justify-content: center;
+
+  align-items: center;
+
+  border: 0.2vh solid white;
+
+  box-shadow: 0.5vh 0.5vh 3vh white;
 }
 
 .blue_right_box{
-    background-color: rgb(66, 194, 229);
-    background-image: radial-gradient( rgb(104, 131, 208), rgb(66, 194, 229), rgb(104, 131, 208));
-    border: 0.5vh solid white;
-    width: 65vh;
-    height: 75vh;
-    display: flex;
-    justify-content: center;
-    text-align: center;
-    align-items: center;
+  background-image:
+  radial-gradient(
+      rgb(104, 131, 208),
+      rgb(66, 194, 229),
+      rgb(104, 131, 208)
+  );
+
+  width: 65vh;
+
+  height: 75vh;
+
+  border: 0.5vh solid white;
+
+  display: flex;
+
+  justify-content: center;
+
+  align-items: center;
 }
 
 .white_right_box{
-    background-image: linear-gradient(rgb(255 216 232), white 50%, rgb(255 216 232) 120%);
-    border: 0.5vh solid white;
-    width: 60vh;
-    height: 70vh;
-    display: flex;
-    flex-direction:column;
-    text-align: center;
-    align-items: center;
+  background-image:
+  linear-gradient(
+      rgb(255 216 232),
+      white 50%,
+      rgb(255 216 232) 120%
+  );
+
+  width: 60vh;
+
+  height: 70vh;
+
+  border: 0.5vh solid white;
+
+  display: flex;
+
+  flex-direction: column;
+
+  align-items: center;
 }
+
+/* HEADER */
 
 .lottery_header{
-    margin-top: 2vh;
-    background-image:radial-gradient(rgb(255 216 232),white,rgb(255 216 232));
-    background-color: white;
-    border: 0.2vh solid rgb(241, 134, 146);
-    width: 55vh;
-    height: 20vh;
-}
+  margin-top: 2vh;
 
+  width: 55vh;
+
+  height: 18vh;
+
+  border: 0.2vh solid rgb(241, 134, 146);
+
+  background-image:
+  radial-gradient(
+      rgb(255 216 232),
+      white,
+      rgb(255 216 232)
+  );
+}
 
 .sylveon_head{
-    width: 55vh;
-    height: 20vh;
+  width: 55vh;
+
+  height: 18vh;
 }
 
+/* TOP BAR */
+
+.top_ticket_bar{
+  width: 55vh;
+
+  display: flex;
+
+  justify-content: space-between;
+
+  align-items: center;
+
+  margin-top: 1vh;
+}
+
+.ticket_cost{
+  background-color: rgb(241, 134, 146);
+
+  color: white;
+
+  padding: 1vh 2vh;
+
+  border-radius: 999vh;
+
+  font-family: "Pixelify Sans";
+
+  font-size: 2vh;
+
+  box-shadow:
+  0 0.3vh 0 rgb(216, 109, 121);
+}
+
+.money_display{
+  font-family: "Pixelify Sans";
+
+  color: rgb(104, 131, 208);
+
+  font-size: 2vh;
+}
+
+.rules_text{
+  font-family: "Pixelify Sans";
+
+  color: rgb(241, 134, 146);
+
+  font-size: 1.8vh;
+
+  margin-top: 1vh;
+
+  margin-bottom: 1vh;
+}
+
+/* TICKET GRID */
+
 .tile_box{
-    background-color: rgb(248, 198, 215);
-    margin-top: 2vh;
-    width: 55vh;
-    height: 42vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    display:flex;
-	flex-direction: column;
+  background-color: rgb(248, 198, 215);
+
+  width: 50vh;
+
+  height: 40vh;
+
+  display: flex;
+
+  flex-direction: column;
+
+  justify-content: center;
+
+  align-items: center;
+
+  border-radius: 2vh;
+  margin-top: 3vh;
 }
 
 .row{
-	display:flex;
-	flex-direction: row;
-	justify-content: center;
-	align-items: center;
+  display: flex;
+
+  flex-direction: row;
 }
 
 .box{
-    display: flex;
-    justify-content: center;
-    text-align: center;
-    align-content: center;
-    margin: 1vh;
-    height: 11vh;
-    width: 11vh;
-    background-color: white;
-    transition: width height 2s;
-    border-radius: 1vh;
+  width: 11vh;
+
+  height: 11vh;
+
+  background-color: white;
+
+  margin: 1vh;
+
+  border-radius: 1vh;
+
+  display: flex;
+
+  justify-content: center;
+
+  align-items: center;
+
+  transition: .2s;
+
+  cursor: pointer;
+  gap: 3vh;
 }
 
 .box:hover{
-    background-color: rgb(198, 243, 255);
-    border-radius: 999vh;
-    width: 12vh;
-    height: 12vh;
+  transform: scale(1.05);
+
+  background-color: rgb(198, 243, 255);
 }
 
 .animated_pokeball{
-    height: 12vh;
-    width: 12vh;
+  width: 10vh;
+
+  height: 10vh;
 }
 
+
+.revealed_card{
+  display: flex;
+
+  flex-direction: column;
+
+  justify-content: center;
+
+  align-items: center;
+}
+
+.revealed_eevee{
+  width: 7vh;
+
+  height: 7vh;
+}
+
+.eevee_name{
+  margin: 0;
+
+  font-family: "Pixelify Sans";
+
+  color: rgb(241, 134, 146);
+
+  font-size: 1.5vh;
+}
+
+.eevee_value{
+  margin: 0;
+
+  font-family: "Pixelify Sans";
+
+  color: rgb(104, 131, 208);
+
+  font-size: 1.3vh;
+}
+
+.new_ticket_button{
+
+  width: fit-content;
+
+  height: 6vh;
+
+  border: none;
+  
+  border-radius: 999vh;
+
+  background-image:
+  linear-gradient(
+      white,
+      rgb(255 216 232)
+  );
+
+  color: rgb(241, 134, 146);
+
+  font-family: "Pixelify Sans";
+
+  font-size: 3vh;
+
+  cursor: pointer;
+
+  transition: .2s;
+
+  box-shadow: 0 0.5vh 0 rgb(255 158 192);
+
+}
+
+.new_ticket_button:hover{
+  transform: translateY(-0.3vh);
+}
+
+/* BOW */
+
 .bow{
-    width: 20vh;
-    height: 20vh;
-    position: absolute;
-    bottom: 82vh;
-	left: 127vh;
+  width: 20vh;
+
+  height: 20vh;
+
+  position: absolute;
+
+  bottom: 82vh;
+
+  left: 127vh;
+}
+
+#result_div{
+  height: 300px;
+  width: 500px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  border: 2px solid black;
+  background-color: white;
+  font-family: sans-serif;
+  border-radius: 10%;
+  
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  text-align: center;
+  color: rgb(241, 134, 146);
+
+  text-shadow: 0.5vh 0.5vh white;
+    
+}
+
+#result_div p{
+  font-size: 7vh;
+  margin-bottom: 20px;
+  margin-top: 20px;
 }
